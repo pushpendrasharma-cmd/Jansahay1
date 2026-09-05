@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Government Schemes for Rajasthan | JanSahay</title>
+  <meta name="description" content="Understand Rajasthan government schemes in plain, jargon-free language. Check basic eligibility for education, healthcare, housing, farming, and social security.">
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Outfit:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- Master Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f97316'%3E%3Cpath d='M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm1 14.93V18h-2v-1.07A6 6 0 0 1 6.07 12H7a5 5 0 0 0 5 5 5 5 0 0 0 5-5h.93A6 6 0 0 1 13 16.93z'/%3E%3C/svg%3E">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =========================================================================
+       Top Navigation Bar (Dark Slate matching reference design)
+       ========================================================================= -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <!-- Brand & Logo -->
+      <a href="index.html" class="brand-wrapper" aria-label="JanSahay - Home">
+        <div class="brand-logo-icon" aria-hidden="true">
+          <!-- Rajasthan Civic Emblem / Lotus Sprout Motif -->
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.5a4.5 4.5 0 0 1 4.5 4.5c0 2.5-4.5 8.5-4.5 8.5S7.5 9.5 7.5 7A4.5 4.5 0 0 1 12 2.5z"/>
+            <path d="M5.5 13.5c1.8-1 4.2-.5 5.5 1 1.3-1.5 3.7-2 5.5-1 2.2 1.2 2.5 3.5 1.5 5.5-2 3.5-6.5 4-6.5 4s-4.5-.5-6.5-4c-1-2-.7-4.3 1.5-5.5z" opacity="0.8"/>
+          </svg>
+        </div>
+        <div class="brand-text-group">
+          <span class="brand-name" data-i18n="brandName">JanSahay</span>
+          <span class="brand-tagline" data-i18n="brandTagline">Sarkari Yojna, Saral Bhasha Mein</span>
+        </div>
+      </a>
+
+      <!-- Center Navigation Links -->
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="#schemes-section" class="nav-link active" data-i18n="navSchemes">Schemes</a>
+        <a href="#how-it-works-section" class="nav-link" data-i18n="navHowItWorks">How it works</a>
+        <a href="#about-section" class="nav-link" data-i18n="navAbout">About</a>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="header-actions">
+        <!-- Text Size Adjuster for Elderly/Low Vision -->
+        <div class="accessibility-controls" title="Adjust text size for better readability" aria-label="Text size controls">
+          <button type="button" id="font-normal" class="font-size-btn active" aria-label="Normal font size">A</button>
+          <button type="button" id="font-large" class="font-size-btn" aria-label="Large font size">A+</button>
+          <button type="button" id="font-larger" class="font-size-btn" aria-label="Extra large font size">A++</button>
+        </div>
+
+        <!-- Language Switcher (हिंदी | English) -->
+        <div class="lang-switcher" aria-label="Language selection">
+          <button type="button" id="lang-hi-btn" class="lang-btn" aria-label="Switch to Hindi">हिंदी</button>
+          <span class="lang-divider" aria-hidden="true">|</span>
+          <button type="button" id="lang-en-btn" class="lang-btn active" aria-label="Switch to English">English</button>
+        </div>
+
+        <!-- Primary Header CTA Button -->
+        <button type="button" id="btn-find-schemes-header" class="btn-header-cta" aria-label="Open schemes finder wizard">
+          <span data-i18n="findSchemesBtn">Find schemes for me</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       Hero Section with Rajasthan Heritage Watermark & Smart Search
+       ========================================================================= -->
+  <section class="hero-section" aria-labelledby="hero-title">
+    <!-- Heritage Palace Watermark on Right -->
+    <div class="hero-bg-watermark" aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <!-- Target Badge Pill -->
+      <div class="location-pill">
+        <span data-i18n="locationBadge">📍 For Rajasthan • Students & Families</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 id="hero-title" class="hero-title" data-i18n="heroTitle">Government schemes, explained simply.</h1>
+      
+      <!-- Subtitle -->
+      <p class="hero-subtitle" data-i18n="heroSubtitle">
+        Understand benefits, check basic conditions, and verify everything on the official government portal.
+      </p>
+
+      <!-- Large Search Input Box -->
+      <div class="search-bar-wrapper">
+        <span class="search-icon-left" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </span>
+        <input 
+          type="search" 
+          id="global-search-input" 
+          class="search-input-box" 
+          placeholder="Search schemes, benefits, or who they're for..." 
+          aria-label="Search schemes, benefits, or who they're for">
+        <button type="button" id="search-clear-btn" class="search-clear-btn" aria-label="Clear search">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <!-- Category Filter Tags Row (with icons) -->
+      <div class="category-tags-row" role="group" aria-label="Quick Category Filter">
+        <button type="button" class="cat-pill-btn" data-cat="Education">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          <span data-i18n="catEducation">Education</span>
+        </button>
+
+        <button type="button" class="cat-pill-btn" data-cat="Healthcare">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6v12M6 12h12"/><circle cx="12" cy="12" r="10"/></svg>
+          <span data-i18n="catHealthcare">Healthcare</span>
+        </button>
+
+        <button type="button" class="cat-pill-btn" data-cat="Housing">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span data-i18n="catHousing">Housing</span>
+        </button>
+
+        <button type="button" class="cat-pill-btn" data-cat="Employment">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          <span data-i18n="catEmployment">Employment</span>
+        </button>
+
+        <button type="button" class="cat-pill-btn" data-cat="Agriculture">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 20h10"/><path d="M10 20c5.5-2.5.8-6.4 3-10"/><path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/></svg>
+          <span data-i18n="catAgriculture">Agriculture</span>
+        </button>
+
+        <button type="button" class="cat-pill-btn" data-cat="Women & Child">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></svg>
+          <span data-i18n="catWomen">Women & Child</span>
+        </button>
+
+        <button type="button" class="cat-pill-btn" data-cat="Financial Support">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12"/><path d="M6 8h12"/><path d="m6 13 8.5 8"/><path d="M6 13h3a4 4 0 0 0 0-8"/></svg>
+          <span data-i18n="catFinancial">Financial Support</span>
+        </button>
+      </div>
+
+      <!-- Trust Badges Row & Official Disclaimer Warning -->
+      <div class="trust-badges-bar">
+        <div class="trust-badges-group">
+          <div class="trust-badge-item">
+            <span class="trust-badge-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </span>
+            <span data-i18n="badgeVerifiedSources">Verified official sources</span>
+          </div>
+
+          <div class="trust-badge-item">
+            <span class="trust-badge-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </span>
+            <span data-i18n="badgePlainLanguage">Plain-language summaries</span>
+          </div>
+
+          <div class="trust-badge-item">
+            <span class="trust-badge-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </span>
+            <span data-i18n="badgeOfficialLink">Official link on every scheme</span>
+          </div>
+        </div>
+
+        <!-- Warning Authority Disclaimer Box -->
+        <div class="authority-warning-box">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <span data-i18n="bannerDisclaimer">Final eligibility is decided by the concerned authority</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Main Discovery Section: Sidebar Filters + Schemes Grid (3 Columns)
+       ========================================================================= -->
+  <main id="main-content" class="main-content-section" role="main">
+    <div class="container discovery-layout">
+      <!-- Left Sidebar: Filters -->
+      <aside class="filters-sidebar" aria-labelledby="filters-heading">
+        <div class="filters-header">
+          <h2 id="filters-heading" class="filters-title" data-i18n="filterHeading">Filters</h2>
+          <button type="button" id="btn-clear-filters-mini" class="btn-clear-filters-mini">
+            <span data-i18n="clearFilters">Clear filters</span>
+            <span aria-hidden="true">⟲</span>
+          </button>
+        </div>
+
+        <!-- Filter 1: Category -->
+        <div class="filter-group">
+          <label for="filter-category-select" class="filter-label">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+            <span data-i18n="filterCategory">Category</span>
+          </label>
+          <select id="filter-category-select" class="filter-select">
+            <option value="all" data-i18n="catAll">All categories</option>
+            <option value="Education" data-i18n="catEducation">Education</option>
+            <option value="Healthcare" data-i18n="catHealthcare">Healthcare</option>
+            <option value="Housing" data-i18n="catHousing">Housing</option>
+            <option value="Employment" data-i18n="catEmployment">Employment</option>
+            <option value="Agriculture" data-i18n="catAgriculture">Agriculture</option>
+            <option value="Women & Child" data-i18n="catWomen">Women & Child</option>
+            <option value="Financial Support" data-i18n="catFinancial">Financial Support</option>
+            <option value="Disability Support" data-i18n="catDisability">Disability Support</option>
+            <option value="Senior Citizens" data-i18n="catSenior">Senior Citizens</option>
+          </select>
+        </div>
+
+        <!-- Filter 2: Age group -->
+        <div class="filter-group">
+          <label for="filter-age-select" class="filter-label">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span data-i18n="filterAgeGroup">Age group</span>
+          </label>
+          <select id="filter-age-select" class="filter-select">
+            <option value="all" data-i18n="filterAgeAll">All age groups</option>
+            <option value="students" data-i18n="filterAgeStudents">Students (15-25)</option>
+            <option value="youth" data-i18n="filterAgeYouth">Youth (18-35)</option>
+            <option value="adults" data-i18n="filterAgeAdults">Adults (18-59)</option>
+            <option value="seniors" data-i18n="filterAgeSeniors">Senior Citizens (60+)</option>
+          </select>
+        </div>
+
+        <!-- Filter 3: State -->
+        <div class="filter-group">
+          <label for="filter-state-select" class="filter-label">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span data-i18n="filterState">State</span>
+          </label>
+          <select id="filter-state-select" class="filter-select" disabled>
+            <option value="Rajasthan" selected>Rajasthan</option>
+          </select>
+        </div>
+
+        <!-- Filter 4: Audience -->
+        <div class="filter-group">
+          <label for="filter-audience-select" class="filter-label">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <span data-i18n="filterAudience">Audience</span>
+          </label>
+          <select id="filter-audience-select" class="filter-select">
+            <option value="all" data-i18n="filterAudienceAll">All audiences</option>
+            <option value="Students" data-i18n="filterAudienceStudents">Students</option>
+            <option value="Farmers" data-i18n="filterAudienceFarmers">Farmers</option>
+            <option value="Women" data-i18n="filterAudienceWomen">Women</option>
+            <option value="Senior Citizens" data-i18n="filterAudienceSeniors">Senior Citizens</option>
+            <option value="Divyangjan" data-i18n="filterAudienceDivyangjan">Divyangjan</option>
+            <option value="Rural Families" data-i18n="filterAudienceRural">Rural Families</option>
+          </select>
+        </div>
+
+        <button type="button" id="btn-clear-all-filters" class="btn-clear-all-full">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+          <span data-i18n="clearAllFiltersBtn">Clear all filters</span>
+        </button>
+      </aside>
+
+      <!-- Right Main Grid: Heading + Cards -->
+      <section id="schemes-section" class="schemes-main-col" aria-label="Schemes Directory">
+        <!-- Top Toolbar -->
+        <div class="grid-top-bar">
+          <div class="grid-heading-group">
+            <h2 class="grid-title" data-i18n="popularSchemesTitle">Popular schemes</h2>
+            <span id="schemes-count-badge" class="verified-count-badge">10 verified schemes</span>
+          </div>
+
+          <div class="sort-wrapper">
+            <label for="sort-schemes-select" class="visually-hidden" style="position:absolute; width:1px; height:1px; overflow:hidden;">Sort schemes</label>
+            <select id="sort-schemes-select" class="sort-select">
+              <option value="popular">Sort by: Popular</option>
+              <option value="recent">Sort by: Recently Updated</option>
+              <option value="eligible">Sort by: Most Eligible</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Active Filter Pills Bar -->
+        <div id="active-filters-bar" class="active-filters-bar" style="display:none;" aria-live="polite"></div>
+
+        <!-- Responsive Schemes Grid (3 Columns on Desktop) -->
+        <div id="schemes-grid" class="schemes-grid" role="region" aria-live="polite">
+          <!-- Dynamic cards injected via js/app.js -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- =========================================================================
+       Bottom Section: "Find schemes for me" (Wizard CTA) & "Why JanSahay?"
+       ========================================================================= -->
+  <section id="how-it-works-section" class="bottom-info-section" aria-labelledby="how-it-works-heading">
+    <div class="container">
+      <h2 id="how-it-works-heading" class="visually-hidden" style="position:absolute; width:1px; height:1px; overflow:hidden;">How JanSahay Works</h2>
+      <div class="bottom-cards-grid">
+        
+        <!-- Card 1 (Left): Find schemes for me (3-step flow) -->
+        <div class="find-for-me-card">
+          <div class="flow-card-header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            <h3 class="flow-card-title" data-i18n="findForMeTitle">Find schemes for me</h3>
+          </div>
+
+          <div class="flow-steps-row">
+            <!-- Step 1 -->
+            <div class="flow-step-item">
+              <div class="step-circle-icon">👤</div>
+              <div class="step-details">
+                <span class="step-title">① <span data-i18n="step1Title">Who are you?</span></span>
+                <span class="step-description" data-i18n="step1Desc">Tell us about yourself (age, student, farmer, job seeker, etc.)</span>
+              </div>
+            </div>
+
+            <div class="flow-arrow-separator" aria-hidden="true">➔</div>
+
+            <!-- Step 2 -->
+            <div class="flow-step-item">
+              <div class="step-circle-icon">🤝</div>
+              <div class="step-details">
+                <span class="step-title">② <span data-i18n="step2Title">What help do you need?</span></span>
+                <span class="step-description" data-i18n="step2Desc">Choose the type of support you are looking for (education, health, housing...)</span>
+              </div>
+            </div>
+
+            <div class="flow-arrow-separator" aria-hidden="true">➔</div>
+
+            <!-- Step 3 -->
+            <div class="flow-step-item">
+              <div class="step-circle-icon">📋</div>
+              <div class="step-details">
+                <span class="step-title">③ <span data-i18n="step3Title">See relevant schemes</span></span>
+                <span class="step-description" data-i18n="step3Desc">We'll show schemes that may match your answers.</span>
+              </div>
+            </div>
+
+            <!-- Start Now Button -->
+            <button type="button" id="btn-start-wizard" class="btn-start-now">
+              <span data-i18n="startNowBtn">Start now ➔</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 (Right): Why JanSahay? -->
+        <div id="about-section" class="why-jansahay-card">
+          <h3 class="why-title" data-i18n="whyJanSahayTitle">Why JanSahay?</h3>
+          <div class="why-features-list">
+            
+            <div class="why-feature-item">
+              <div class="why-icon-badge icon-green">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <div class="why-feature-text">
+                <span class="why-feature-title" data-i18n="feature1Title">Simple language</span>
+                <span class="why-feature-desc" data-i18n="feature1Desc">Complex terms explained in easy words.</span>
+              </div>
+            </div>
+
+            <div class="why-feature-item">
+              <div class="why-icon-badge icon-blue">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="why-feature-text">
+                <span class="why-feature-title" data-i18n="feature2Title">Source transparency</span>
+                <span class="why-feature-desc" data-i18n="feature2Desc">Official link on every scheme. Verify on government portal.</span>
+              </div>
+            </div>
+
+            <div class="why-feature-item">
+              <div class="why-icon-badge icon-purple">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <div class="why-feature-text">
+                <span class="why-feature-title" data-i18n="feature3Title">Quick eligibility guidance</span>
+                <span class="why-feature-desc" data-i18n="feature3Desc">Answer simple questions to get basic guidance.</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       Site Footer (Dark Navy matching reference mockup)
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <!-- Left Disclaimer Notice -->
+      <div class="footer-disclaimer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        <span data-i18n="footerDisclaimer">
+          Information only. JanSahay does not guarantee eligibility or approval. Final eligibility is determined only by the concerned government authority.
+        </span>
+      </div>
+
+      <!-- Right Footer Links & Social Media -->
+      <div class="footer-links-group">
+        <nav class="footer-nav-links" aria-label="Footer Links">
+          <a href="https://rajasthan.gov.in" target="_blank" rel="noopener noreferrer" data-i18n="footerOfficialSources">Official Sources</a>
+          <a href="#about-section" data-i18n="footerAccessibility">Accessibility</a>
+          <a href="#about-section" data-i18n="footerPrivacy">Privacy</a>
+          <a href="#about-section" data-i18n="footerContact">Contact</a>
+        </nav>
+
+        <div class="footer-social-links" aria-label="Official Social Media Handles">
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow on X (Twitter)">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow on Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.82 0-1.666.28-1.666 1.458v2.522h3.993l-.626 3.667h-3.367v7.98H9.101z"/></svg>
+          </a>
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow on YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Floating Scheme Comparison Dock (Appears when 1+ schemes selected)
+       ========================================================================= -->
+  <aside id="comparison-floating-bar" class="comparison-floating-bar" aria-label="Scheme Comparison Dock">
+    <span class="compare-badge-pill" id="compare-count-badge">0 schemes selected</span>
+    <button type="button" id="btn-open-compare-modal" class="btn-open-compare">Compare Now</button>
+    <button type="button" id="btn-clear-compare" class="btn-clear-compare" aria-label="Clear all compared schemes">✕ Clear</button>
+  </aside>
+
+  <!-- =========================================================================
+       Scheme Detail Modal (Native HTML5 <dialog>)
+       ========================================================================= -->
+  <dialog id="detail-modal" aria-labelledby="modal-header-title">
+    <div class="modal-inner-container">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div id="modal-header-icon" class="modal-icon"></div>
+          <div>
+            <h2 id="modal-header-title" class="modal-title">Scheme Name</h2>
+            <p id="modal-header-subtitle" class="modal-subtitle">Category • Authority</p>
+          </div>
+        </div>
+        <button type="button" id="detail-modal-close" class="modal-close-btn" aria-label="Close dialog">✕</button>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="modal-tabs-nav" role="tablist">
+        <button type="button" class="modal-tab-btn active" data-tab="overview" role="tab">Overview & Benefits</button>
+        <button type="button" class="modal-tab-btn" data-tab="criteria" role="tab">Eligibility Criteria</button>
+        <button type="button" class="modal-tab-btn" data-tab="docs" role="tab">Documents Checklist</button>
+        <button type="button" class="modal-tab-btn" data-tab="process" role="tab">How to Apply</button>
+        <button type="button" class="modal-tab-btn" data-tab="faq" role="tab">FAQs</button>
+      </div>
+
+      <!-- Modal Content Panes -->
+      <div class="modal-body">
+        <div id="tab-overview" class="tab-pane active" role="tabpanel"></div>
+        <div id="tab-criteria" class="tab-pane" role="tabpanel"></div>
+        <div id="tab-docs" class="tab-pane" role="tabpanel"></div>
+        <div id="tab-process" class="tab-pane" role="tabpanel"></div>
+        <div id="tab-faq" class="tab-pane" role="tabpanel"></div>
+      </div>
+
+      <div class="modal-footer">
+        <span style="font-size:0.75rem; color:#64748b;">
+          🛡️ Government of Rajasthan official portal verification
+        </span>
+        <a id="modal-external-link" href="#" target="_blank" rel="noopener noreferrer" class="btn-official-external">
+          Visit Official Portal ↗
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- =========================================================================
+       Side-by-Side Scheme Comparison Modal
+       ========================================================================= -->
+  <dialog id="comparison-modal" aria-labelledby="comparison-title">
+    <div class="modal-inner-container" style="max-width:960px; width:95vw;">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-icon" style="background:#ffedd5; color:#ea580c;">⚖️</div>
+          <div>
+            <h2 id="comparison-title" class="modal-title">Scheme Comparison</h2>
+            <p class="modal-subtitle">Compare eligibility, benefits, and required documents side-by-side</p>
+          </div>
+        </div>
+        <button type="button" id="comparison-modal-close" class="modal-close-btn" aria-label="Close dialog">✕</button>
+      </div>
+      <div id="comparison-modal-body" class="modal-body"></div>
+    </div>
+  </dialog>
+
+  <!-- =========================================================================
+       "Find Schemes for Me" Demographic Matcher Wizard Modal
+       ========================================================================= -->
+  <dialog id="wizard-modal" aria-labelledby="wizard-modal-title">
+    <div class="modal-inner-container">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-icon" style="background:#ffedd5; color:#ea580c;">🧭</div>
+          <div>
+            <h2 id="wizard-modal-title" class="modal-title" data-i18n="wizardTitle">Scheme Finder for Rajasthan Citizens</h2>
+            <p class="modal-subtitle" data-i18n="wizardSubtitle">Answer 2 quick questions to discover schemes you can apply for right now.</p>
+          </div>
+        </div>
+        <button type="button" id="wizard-modal-close" class="modal-close-btn" aria-label="Close dialog">✕</button>
+      </div>
+      <div id="wizard-modal-body" class="modal-body"></div>
+    </div>
+  </dialog>
+
+  <!-- Application Controller -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
